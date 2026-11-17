@@ -1,0 +1,151 @@
+/* Estilos Generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f9f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Menú de Navegación */
+.menu {
+    background-color: #2e7d32;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.menu .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu .enlaces {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu .enlaces li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.menu .enlaces li a:hover {
+    color: #a5d6a7;
+}
+
+/* Contenedor Principal */
+.contenedor-principal {
+    display: flex;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+/* Paneles (Formulario y Resultados) */
+.panel-formulario, .panel-resultados, .seccion-mis-plantas {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    flex: 1;
+    min-width: 300px;
+}
+
+.panel-formulario h2, .panel-resultados h2, .seccion-mis-plantas h2 {
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+.panel-formulario p, .panel-resultados p {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+/* Formularios y Campos */
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+input[type="text"], select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #fafafa;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus, select:focus, textarea:focus {
+    border-color: #2e7d32;
+    box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.1);
+    outline: none;
+    background-color: #fff;
+}
+
+/* Botones */
+.btn-consultar {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s;
+}
+
+.btn-consultar:hover {
+    background-color: #1b5e20;
+}
+
+/* Caja de Resultados */
+.caja-informacion {
+    background-color: #f1f8e9;
+    border-left: 5px solid #2e7d32;
+    padding: 20px;
+    border-radius: 6px;
+    min-height: 200px;
+}
+
+.mensaje-vacio {
+    color: #777;
+    font-style: italic;
+}
+
+/* Pie de Página / Fuente */
+.footer-fuente {
+    text-align: center;
+    margin: 50px 0 30px 0;
+    padding: 20px;
+    color: #666;
+    font-size: 0.9rem;
+    border-top: 1px solid #ddd;
+}
+
+.footer-fuente a {
+    color: #2e7d32;
+    text-decoration: underline;
+    font-weight: 600;
+}
